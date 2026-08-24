@@ -1,0 +1,41 @@
+{
+  "name": "genpark-sidewalk-robot-last-mile-zero-emission-delivery-skill",
+  "version": "1.0.0",
+  "description": "GenPark AI Agent Skill - Teleoperated sidewalk delivery robot dispatcher, zero-emission last-mile food/grocery transit scheduler, and secure OTP lockbox manager.",
+  "author": "genpark",
+  "category": "robotics",
+  "tags": [
+    "sidewalk-robot",
+    "zero-emission-delivery",
+    "last-mile-automation",
+    "teleoperation",
+    "coco-delivery"
+  ],
+  "inputs": {
+    "merchant_address": {
+      "type": "string"
+    },
+    "delivery_distance_km": {
+      "type": "number"
+    },
+    "payload_kg": {
+      "type": "number"
+    }
+  },
+  "outputs": {
+    "bot_mission_id": {
+      "type": "string"
+    },
+    "assigned_robot_id": {
+      "type": "string"
+    },
+    "transit_duration_minutes": {
+      "type": "number"
+    },
+    "lockbox_otp_secure_handover_code": {
+      "type": "string"
+    }
+  },
+  "entrypoint": "client.py",
+  "example": "example_usage.py"
+}
